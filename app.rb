@@ -13,5 +13,7 @@ get '/secret/bug' do
 end
 
 get '/cat' do
-   erb(:index)
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  @age = [24, 30, 95].sample
+  erb(:index)
 end

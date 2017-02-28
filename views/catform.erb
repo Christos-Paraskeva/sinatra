@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body style='background-color:powderblue;'>
+  <form method='post' action='/named-cat' align="left">
+    <input type='text' name='name' placeholder='name'>
+    <input type='text' name='age' placeholder='age'>
+    <input type='submit' value='Submit'>
+  </form>
+    <%if @name && (@name.length > 0) && (@age.length > 0) %>
+      <h1>My name is <%=@name.capitalize%> and I am <%=@age%> years old!</h1>
+    <%end %>
+</html>

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
   <header>
-    <!-- <a> -->
     <center>
-
-      <form action='/named-cat' align="left">
+      <form action='/named-cat' method='post' align="left">
         <body style='background-color:powderblue;'>
         <input type='text' name='name' placeholder='name'>
         <input type='text' name='age' placeholder='age'>
@@ -19,32 +17,12 @@
          This Website<br />
       </form>
       <p></p>
-      <a href="http://funhtml5games.com?embed=spaceinvaders" ><img width="500" height="210" src="https://files.slack.com/files-pri/T03ALA7H4-F4BK82ESG/pasted_image_at_2017_02_28_16_46.png" />
+      <a href="http://funhtml5games.com?embed=spaceinvaders" ><img width="500" height="210" src="http://i.imgur.com/w69lG1S.png" />
       </a>
     <a href="http://funhtml5games.com?embed=spaceinvaders" ><img align="right" src="http://i.imgur.com/kZCRino.jpg" />
 </a>
-
   </center>
-
-
-
-  </header>
-
-  <!-- <form action='/named-cat'>
-    <body style='background-color:powderblue;'>
-    <input type='text' name='name' placeholder='name'>
-    <input type='text' name='age' placeholder='age'>
-    <input type='submit' value='Submit'>
-  </form>
-  <p></p>
-  <form method="get" action="https://www.google.co.uk/">
-    <input type="text" name="q" size="31" maxlength="255" value="" placeholder="Google Search" />
-    <input type="submit" value="Search" />
-    <input type="radio" name="sitesearch" value="" />
-     The Web <input type="radio" name="sitesearch" value="http://127.0.0.1:9393/named-cat?name=af&age=14" checked />
-     This Website<br />
-  </form>
-  <p></p> -->
+</header>
     <%if @name && (@name.length > 0) && (@age.length > 0) %>
       <h1>My name is <%=@name.capitalize%> and I am <%=@age%> years old!</h1>
     <%end %>
@@ -56,5 +34,4 @@
   <section>
     <blockquote class="imgur-embed-pub" lang="en" data-id="a/4AHGw"><a href="//imgur.com/4AHGw"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
   </section>
-
 </html>

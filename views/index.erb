@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
   <header>
-    <img align="right" src=http://i.imgur.com/kZCRino.jpg>
+    <!-- <a> -->
+    <center>
+
+      <form action='/named-cat' align="left">
+        <body style='background-color:powderblue;'>
+        <input type='text' name='name' placeholder='name'>
+        <input type='text' name='age' placeholder='age'>
+        <input type='submit' value='Submit'>
+      </form>
+      <p></p>
+      <form method="get" action="https://www.google.co.uk/" align="left">
+        <input type="text" name="q" size="31" maxlength="255" value="" placeholder="Google Search" />
+        <input type="submit" value="Search" />
+        <input type="radio" name="sitesearch" value="" />
+         The Web <input type="radio" name="sitesearch" value="http://127.0.0.1:9393/named-cat?name=af&age=14" checked />
+         This Website<br />
+      </form>
+      <p></p>
+      <a href="http://funhtml5games.com?embed=spaceinvaders" ><img width="500" height="210" src="https://files.slack.com/files-pri/T03ALA7H4-F4BK82ESG/pasted_image_at_2017_02_28_16_46.png" />
+      </a>
+    <a href="http://funhtml5games.com?embed=spaceinvaders" ><img align="right" src="http://i.imgur.com/kZCRino.jpg" />
+</a>
+
+  </center>
+
+
+
   </header>
-  <form action='/named-cat'>
+
+  <!-- <form action='/named-cat'>
     <body style='background-color:powderblue;'>
     <input type='text' name='name' placeholder='name'>
     <input type='text' name='age' placeholder='age'>
@@ -17,7 +44,7 @@
      The Web <input type="radio" name="sitesearch" value="http://127.0.0.1:9393/named-cat?name=af&age=14" checked />
      This Website<br />
   </form>
-  <p></p>
+  <p></p> -->
     <%if @name && (@name.length > 0) && (@age.length > 0) %>
       <h1>My name is <%=@name.capitalize%> and I am <%=@age%> years old!</h1>
     <%end %>

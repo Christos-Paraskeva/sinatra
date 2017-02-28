@@ -24,3 +24,7 @@ get '/named-cat' do
   @age = params[:age]
   erb(:index)
 end
+
+get '/space-invaders' do
+  erb(:game)
+end
